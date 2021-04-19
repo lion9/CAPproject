@@ -1,0 +1,11 @@
+GET http://localhost:4004/vac/VaccinationSet?$filter=country eq 'Russia'
+###
+POST http://localhost:4004/vac/VaccinationSet
+Content-Type: application/json
+
+{
+    "entryid":7,
+    "country":"Ukraine",
+    "vaccinated_people":"4245",
+    "vaccine_name":"Sputnik V"
+}
